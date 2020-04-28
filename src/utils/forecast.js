@@ -12,7 +12,8 @@ const forecast = (latitude, longitude, callback) => {
             
         }
         else{
-            callback(undefined,body.weather[0].description + ". It is currently " + body.main.temp + " degrees out there. With pressure " + body.main.pressure + " hpa.")
+            callback(undefined,body.weather[0].description + ". It is currently " + body.main.temp + 
+            " degrees out there. With pressure " + body.main.pressure + " hpa. Humidity : " + body.main.humidity + "%")
     
         }
     })
